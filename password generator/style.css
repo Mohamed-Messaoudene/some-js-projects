@@ -1,0 +1,138 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: italic;
+}
+body{
+    background-color: rgb(4, 4, 15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+section{
+    width: clamp(200px,60vw,600px);
+    height: clamp(50vh,80vw,80vh);
+    background-color: aliceblue;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+section h2{
+    font-size: clamp(12px,3vw,26px);
+    text-align: center;
+    padding-top: 22px;
+    letter-spacing: 2px;
+    position: relative;
+    margin-bottom: 3vh;
+}
+section h2::after{
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.result{
+    width: 100%;
+    height: clamp(27px,8vw,60px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 4%;
+}
+.result p{
+    width: 70%;
+    color: black;
+    height: 80%;
+    border: 2px solid blueviolet;
+    text-align: center;
+    border-radius: 15px;
+    font-size: clamp(9px,3vw,20px);
+    padding-top: 2%;
+}
+#copy{
+    height: fit-content;
+    height: 90%;
+    width: 16%;
+}
+#copy button{
+    border: none;
+    background-color:blueviolet;
+    color: whitesmoke;
+    height: 100%;
+    width: 70%;
+    border-radius: 12px;
+    cursor: pointer;
+    i{
+        font-size: clamp(10px,3vw,19px);
+        font-weight: bold;
+    }
+}
+#copy button:hover{
+    background-color: rgb(152, 72, 226);
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 5%;
+    height: clamp(20vh,50%,40vh);
+}
+ul li{
+    height: clamp(30px,5vw,50px);
+    font-size: clamp(9px,2vw,17px);
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ul li span{
+    width: 70%;
+}
+ul li input[type="checkbox"] {
+    height: 20px;
+    cursor: pointer;
+    width: clamp(10px,3vw,20px);
+
+}
+ul li input[type="number"] {
+    width: clamp(30px,5vw,45px);
+    font-size: clamp(9px,2vw,20px);
+    height: 60%;
+    font-weight: bold;
+    text-align: center;
+}
+#generate{
+    height: clamp(30px,6vw,50px);
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: clamp(9px,3vw,20px);
+    cursor: pointer;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+    color: wheat;
+    background-color: rgb(117, 29, 199);
+    transition: all .3s linear;
+}
+#generate:hover{
+background-color: rgb(118, 18, 199);
+letter-spacing: 3px;
+}
+section ul li input.error{
+    border-color: red;
+}
+
+

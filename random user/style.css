@@ -1,0 +1,118 @@
+*{
+    padding: 0%;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+}
+.big{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.big::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height:50vh;
+    background-color:rgb(31, 29, 29) ;
+
+}
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20vh;
+    background-color: gray;
+    border-top-left-radius: 8px;
+    border-top-right-radius:8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  }
+.container{
+    position: relative;
+    width: 70%;
+    height: 70vh;
+    background-color: rgb(150, 164, 165);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 2px 22px 20px black;
+    border-radius: 8px;
+    img{
+        border-radius: 50%;
+        z-index: 1;
+        border: 5px solid white;
+    }
+    p{
+        font-weight: bold;
+        font-size:clamp(11px,3vw,18px);
+        color: blanchedalmond;
+    }
+    h2{
+        font-size: clamp(13px,3vw,30px);
+        letter-spacing: 1px;
+    }
+    section{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        button{
+            border: none;
+            background-color: transparent;
+            font-weight: bolder;
+            font-size: clamp(19px,5vw,36px);
+            color: rgb(11, 34, 134);
+            cursor: pointer;
+            transition: all .3s linear;
+            
+        }
+        button:hover{
+            color: rgb(214, 88, 15);    
+        }
+    }
+    button{
+        cursor: pointer;
+        margin-top: 20px;
+        font-size: clamp(12px,3vw,17px);
+        width:clamp(100px,20vw,180px);
+        height: 35px;
+        border-radius: 10px;
+        border: none;
+        color: beige;
+        background-color: rgb(29, 138, 201);
+        transition: all .3s linear;
+        
+    }
+    #click:hover{
+        background-color: rgb(74, 57, 221);
+        color: white;   
+     }
+}
+@media screen and (max-width:500px) {
+
+    .container{
+        width: 90%;
+    }
+    .container section{
+        justify-content: space-around;
+        width: 94%;
+    }
+    .container section button{
+        font-weight: bold;
+    }
+
+}
+@media screen and (min-height:900px) {
+    .container::before{
+        height: 25vh;
+    }
+}

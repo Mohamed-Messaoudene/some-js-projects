@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="messaoudene mohamed">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/83adcd84e1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <h2>Password Generator</h2>
+        <div class="result">
+            <p></p>
+            <div id="copy"><button ><i class="fa-regular fa-clone"></i></button></div>
+        </div>
+        <ul>
+            <li><span>password length(between 4 and 20) :</span><input type="number" min="4" max="20" name="length" id="len" required ></li>
+            <li><span>Include uppercase letters </span><input type="checkbox" name="uppercase" id="up"></li>
+            <li><span>Include lowercase letters</span> <input type="checkbox" name="lowercase" id="low"></li>
+            <li><span>Include numbers</span> <input type="checkbox" name="numbers" id="nbr"></li>
+            <li><span>Include symbols</span> <input type="checkbox" name="symbols" id="symb"></li>
+        </ul>
+        <button id="generate">Generate password</button>
+    </section>
+   <script src="script.js"></script> 
+</body>
+</html>

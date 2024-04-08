@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="messaoudene mohamed">
+    <meta name="description" content="it is a siple quiz app ,that contains some questions about js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="quiz_container">
+            <h1 class="lora-font">question</h1>
+            <ul>
+                <button id="choice1" class="answer" onclick="dod(this.id)"> choice </button>
+                <button id="choice2" class="answer" onclick="dod(this.id)"> choice </button>
+                <button id="choice3" class="answer" onclick="dod(this.id)"> choice </button>
+                <button id="choice4" class="answer" onclick="dod(this.id)"> choice </button>
+            </ul>
+            <div class="show"></div>
+            <button id="submit">next question</button>
+    </div>
+</body>
+<script src="quiz.js"></script>  
+</html>

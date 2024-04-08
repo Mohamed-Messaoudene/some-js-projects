@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>color flipper</title>
+    <meta charset="utf-8">
+    <meta name="description" content="a simple page ,that has a variable background-color , such that for each click on the button b the user the background color change randomly.">
+    <meta name="keywords" content="java script,color flipper,software engineer">
+    <meta name="author" content="messaoudene mohamed">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href ="style.css"/>
+</head>
+<body>
+    <header>
+        <h2>color flipper</h2>
+        <ul>
+            <li><button id="simple" class=""  onclick="switch_case(this.id)">simple</button></li>
+            <li><button id="hex" onclick="switch_case(this.id)">hex</button></li>
+            <li><button id="rgb" onclick="switch_case(this.id)">rgb</button></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="text">   background-color    :   <span class="color">  White </span> </div>
+        <button id="change">change color</button>
+    </div>
+    <script src="flapper.js"></script>
+</body>
+</html>
